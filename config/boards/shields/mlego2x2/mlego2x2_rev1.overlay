@@ -51,7 +51,7 @@
             label = "Caps lock LED";
         };
     };
-
+/*
    leds_i: leds_i {
      compatible = "pwm-leds";
      label = "leds layers";
@@ -97,6 +97,8 @@
             };
         };
    };
+*/
+
 };
 
 /*
