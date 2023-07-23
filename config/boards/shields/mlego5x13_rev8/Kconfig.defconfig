@@ -4,7 +4,7 @@
 if SHIELD_MLEGO5x13_REV8
 
 config ZMK_KEYBOARD_NAME
-    default "custom m65 5x14 rev8"
+    default "custom 5x14"
 
 config SPI
 	default y
