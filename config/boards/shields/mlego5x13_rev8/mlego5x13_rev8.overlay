@@ -126,7 +126,7 @@
     compatible = "zmk,gpio-595";
     status = "okay";
     gpio-controller;
-    spi-max-frequency = <150000>;
+    spi-max-frequency = <210000>;
     #gpio-cells = <2>;
     reg = <0>;
     label = "4HC595";
