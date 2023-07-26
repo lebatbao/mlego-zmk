@@ -114,14 +114,14 @@
     ch2-inverted;
 };
 */
-&mlego_encoder { 
+&mlego_encoder {
   status = "okay"; 
 };
 
 &xiao_spi {
   status = "okay";
 
-  cs-gpios = <&xiao_d 7 GPIO_ACTIVE_HIGH>;
+  cs-gpios = <&xiao_d 7 GPIO_ACTIVE_LOW>;
   shift_reg: 595@0 {
     compatible = "zmk,gpio-595";
     status = "okay";
