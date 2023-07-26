@@ -25,23 +25,7 @@
         };
     };
 
-    behaviors {
-        tlwr: tlwr {
-            compatible = "zmk,behavior-tap-dance";
-            label = "tlwr";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo LWR>, <&tog LWR>, <&trans>;
-        };
-
-        trse: trse {
-            compatible = "zmk,behavior-tap-dance";
-            label = "trse";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&mo RSE>, <&tog RSE>, <&trans>;
-        };
-    };
+   
 
     keymap {
         compatible = "zmk,keymap";
