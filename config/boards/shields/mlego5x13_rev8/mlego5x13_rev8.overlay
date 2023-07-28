@@ -3,22 +3,11 @@
  * SPDX-License-Identifier: MIT
  */
 
-#include <dt-bindings/zmk/keys.h>
-#include <behaviors.dtsi>
+
 #include <dt-bindings/zmk/matrix_transform.h>
 #include <dt-bindings/led/led.h>
 
-behaviors {
-    ltm {
-      compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <200>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-    }
-}
+
 / {
    model = "mlego m65, rev8";
    compatible = "mlego", "seeduino,xiao_ble";
