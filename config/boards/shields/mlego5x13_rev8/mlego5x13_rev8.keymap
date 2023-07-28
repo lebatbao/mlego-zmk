@@ -15,19 +15,19 @@
 #define RSE 2
 #define ADJ 3
 
-/ behaviors {
-    ltm {
-      compatible = "zmk,behavior-hold-tap";
-            label = "POSITIONAL_HOLD_TAP";
-            #binding-cells = <2>;
-            flavor = "tap-unless-interrupted";
-            tapping-term-ms = <200>;                        // <---[[produces tap if held longer than tapping-term-ms]]
-            quick-tap-ms = <200>;
-            bindings = <&kp>, <&kp>;
-    }
-}
-/ {
 
+/ {
+    behaviors {
+        ltm {
+        compatible = "zmk,behavior-hold-tap";
+                label = "POSITIONAL_HOLD_TAP";
+                #binding-cells = <2>;
+                flavor = "tap-unless-interrupted";
+                tapping-term-ms = <200>;                        // <---[[produces tap if held longer than tapping-term-ms]]
+                quick-tap-ms = <200>;
+                bindings = <&kp>, <&kp>;
+        }
+    }
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
