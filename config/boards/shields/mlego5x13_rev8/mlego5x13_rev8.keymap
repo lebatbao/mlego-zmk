@@ -26,8 +26,8 @@
                 tapping-term-ms = <200>;                        // <---[[produces tap if held longer than tapping-term-ms]]
                 quick-tap-ms = <200>;
                 bindings = <&kp>, <&kp>;
-        }
-    }
+        };
+    };
     conditional_layers {
         compatible = "zmk,conditional-layers";
         tri_layer {
